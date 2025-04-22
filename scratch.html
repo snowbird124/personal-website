@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layne's Strategy Gamer Shelf</title>
+    <link rel="stylesheet" href="scratch.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-bar">
+        <a href="index.html">Back to Main Site</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Layne's Strategy Gamer Shelf</h1>
+        <p>A mix of board and video games that challenge the mind and fuel obsession.</p>
+        <a href="#top-games" class="jump-link">Jump to My Top Games</a>
+        <a href="game-finder.html" class="jump-link">Check out my Game Recommender Web App</a>
+
+    </div>
+
+    <!-- Section 1: YouTube Embed -->
+    <div class="section">
+        <h2>Game Spotlight: Terraforming Mars</h2>
+        <p>One of my favorite engine-building board games. Here’s a quick look at how it plays:</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://youtu.be/n3yVpsiVwL8?si=yzb9gpe0zjss8X60" title="Terraforming Mars Game Overview" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Section 2: Top Games List -->
+    <div class="section" id="top-games">
+        <h2>My Top Strategy Games</h2>
+        <ol>
+            <li>Top Board Games:
+                <ul>
+                    <li>Terraforming Mars</li>
+                    <li>Spirit Island</li>
+                    <li>Scythe</li>
+                </ul>
+            </li>
+            <li>Top Video Games:
+                <ul>
+                    <li>Civilization VI</li>
+                    <li>Fire Emblem: Three Houses</li>
+                    <li>Stellaris</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+<!-- Section 3: Tableau Embed -->
+<div class="section">
+    <h2>Strategy Games by Platform</h2>
+    <p>Here’s a Tableau visualization of top video game platforms by total sales:</p>
+    <div class='tableauPlaceholder' id='viz1745310477644' style='position: relative'>
+        <noscript><a href='#'><img alt='Video Game Sales ' src='https://public.tableau.com/static/images/Vi/VideoGames_16181956517070/VideoGameSales/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https://public.tableau.com/views/VideoGames_16181956517070/VideoGameSales?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='VideoGames_16181956517070%2FVideoGameSales' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/Vi/VideoGames_16181956517070/VideoGameSales/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>                
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1745310477644');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1300px';vizElement.style.height='1427px';}
+        else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1300px';vizElement.style.height='1427px';}
+        else { vizElement.style.width='100%';vizElement.style.height='1777px';}                     
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</div>
+
+
+
+    <!-- Section 4: Image and Wrap-up -->
+    <div class="section">
+        <h2>Favorite Game in Action</h2>
+        <img src="assets/img/mars.jpg" alt="Terraforming Mars Board Setup" class="featured-img">
+        <p>This setup never gets old. Strategy, long-term planning, and ruthless competition.</p>
+    </div>
+</body>
+</html>

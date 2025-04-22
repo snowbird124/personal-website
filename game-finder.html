@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strategy Game Finder</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f2f6fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2b3e50;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 30px;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .game-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .game-description {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .back-link {
+            margin-top: 40px;
+            display: inline-block;
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Find Your Next Favorite Strategy Game</h1>
+    <button onclick="showGame()">Suggest a Game</button>
+
+    <div class="card" id="gameCard" style="display: none;">
+        <div class="game-title" id="gameTitle"></div>
+        <div class="game-description" id="gameDescription"></div>
+    </div>
+
+    <a class="back-link" href="scratch.html">← Back to Scratch Page</a>
+
+    <script>
+        const games = [
+    {
+        title: "Terraforming Mars",
+        description: "A deep engine-building board game where you compete to make Mars habitable while maximizing your corporation’s profits."
+    },
+    {
+        title: "Spirit Island",
+        description: "Play as powerful spirits defending your island from colonizers. Cooperative, complex, and incredibly satisfying."
+    },
+    {
+        title: "Scythe",
+        description: "An alternate-history board game combining resource management, territory control, and asymmetric powers."
+    },
+    {
+        title: "Civilization VI",
+        description: "Build an empire that stands the test of time. Choose your leader, develop technologies, and compete on a global stage."
+    },
+    {
+        title: "Fire Emblem: Three Houses",
+        description: "A tactical RPG packed with story, character development, and meaningful decisions on and off the battlefield."
+    },
+    {
+        title: "Stellaris",
+        description: "A real-time grand strategy game where you control a space-faring civilization exploring the galaxy."
+    },
+    {
+        title: "Through the Ages",
+        description: "A civilization-building card game focusing on careful planning, production, and military might."
+    },
+    {
+        title: "Into the Breach",
+        description: "A tightly designed, turn-based mech tactics game with roguelike mechanics and pixel-perfect planning."
+    },
+    {
+        title: "Arcs",
+        description: "A fast-playing sci-fi strategy game of empire building and sudden twists in a declining galactic order."
+    },
+    {
+        title: "Root",
+        description: "A woodland war game of asymmetric factions battling for control—adorable art meets cutthroat strategy."
+    },
+    {
+        title: "Clank!",
+        description: "A push-your-luck deck-building adventure where you sneak through a dungeon, steal treasure, and try not to wake the dragon."
+    },
+    {
+        title: "Dune: Imperium",
+        description: "Blend deck-building and worker placement in a ruthless political battle for control of the spice-rich planet Arrakis."
+    },
+    {
+        title: "Slay the Spire",
+        description: "A roguelike deck-builder where you craft powerful combos, battle wild monsters, and climb ever deeper into the spire."
+    },
+    {
+        title: "Agricola",
+        description: "A Euro classic where you grow a family farm, balance food, and optimize every action in a tight, tactical puzzle."
+    },
+    {
+        title: "Pandemic",
+        description: "Work as a team to stop global outbreaks in this iconic cooperative game of crisis management and strategic planning."
+    },
+    {
+        title: "Wingspan",
+        description: "A peaceful yet strategic engine-builder where you attract birds to your wildlife preserve and build powerful combos."
+    }
+];
+
+
+        function showGame() {
+            const game = games[Math.floor(Math.random() * games.length)];
+            document.getElementById("gameTitle").textContent = game.title;
+            document.getElementById("gameDescription").textContent = game.description;
+            document.getElementById("gameCard").style.display = "block";
+        }
+    </script>
+</body>
+</html>
